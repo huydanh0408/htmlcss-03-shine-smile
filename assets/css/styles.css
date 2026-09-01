@@ -2,6 +2,75 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg-color: #10375c;
+}
+
 body {
   font-family: "Sora", sans-serif;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-inline: auto;
+}
+
+/* Logo  */
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px 6px;
+  font-size: 1rem;
+}
+
+.logo__icon::before,
+.logo__icon::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+}
+.logo__icon::before {
+  width: 1.875em;
+  height: 1.875em;
+  background: #2e80ce;
+}
+
+.logo__icon::after {
+  position: absolute;
+  left: 0.6875em;
+  bottom: 0.25em;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+}
+
+.logo__text {
+  text-align: right;
+  line-height: 0.875em;
+}
+
+.logo__brand {
+  display: block;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: #fff;
+}
+
+.logo__brand--small {
+  font-size: 0.75em;
+  font-weight: 300;
+}
+
+/* Header */
+.header {
+  min-height: 100vh;
+  padding: 30px 0px;
+  background: var(--main-bg-color);
 }
