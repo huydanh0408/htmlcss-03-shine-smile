@@ -45,6 +45,14 @@ a {
   cursor: pointer;
 }
 
+.section__heading {
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--main-bg-color);
+}
+
 .section__desc {
   margin: 18px 0;
   font-size: 1.125rem;
@@ -68,10 +76,11 @@ a {
   display: block;
   border-radius: 50%;
 }
+
 .logo__icon::before {
   width: 1.875em;
   height: 1.875em;
-  background: #2e80ce;
+  background: var(--primary-color);
 }
 
 .logo__icon::after {
@@ -186,13 +195,13 @@ a {
 
 .hero__desc {
   color: #c9d2da;
-  margin: 22px 0;
+  margin-top: 22px;
 }
 
 .hero__row {
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 38px;
 }
 
 .hero__phone {
@@ -223,5 +232,84 @@ a {
   margin-left: -6px;
   width: 210px;
   height: 410px;
-  /* border-radius: 0 6px 6px 0; */
+}
+
+/* Service  */
+.service {
+  padding: 170px 0;
+}
+
+.service__heading,
+.service__desc {
+  text-align: center;
+}
+
+.service__desc {
+  width: 468px;
+  margin-inline: auto;
+}
+
+.service__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.service__img {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.service-item {
+  display: flex;
+  gap: 0px 19px;
+  width: 470px;
+  padding: 22px 22px 20px;
+  background: #fff;
+  border-radius: 10px;
+  color: var(--main-bg-color);
+  transition: 0.25s;
+}
+.service-item:hover {
+  position: relative;
+  box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.05);
+}
+
+.service-item__icon {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #eff6fd;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.service-item__heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.28;
+  color: var(--main-bg-color);
+}
+
+.service-item__desc {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #575f66;
+}
+
+.service-item:hover .service-item__icon {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.service .btn {
+  margin-top: 55px;
 }
