@@ -499,3 +499,44 @@ a {
 .member__control-btn:last-child {
   rotate: 180deg;
 }
+
+/* Install */
+.install {
+  margin-top: 180px;
+}
+
+.install__inner {
+  display: flex;
+  padding: 0 70px;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color-1);
+  border-radius: 4px;
+}
+
+.install__img {
+  display: block;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+  margin-top: -95px;
+}
+
+.install__content {
+  max-width: 586px;
+}
+
+.install__heading,
+.install__desc {
+  color: #fff;
+}
+
+.install__heading {
+  max-width: 489px;
+}
+
+.install__links {
+  display: flex;
+  column-gap: 28px;
+  margin-top: 38px;
+}
